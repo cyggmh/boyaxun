@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<title>郑州博雅讯科技有限公司</title>
+		<link rel="stylesheet" type="text/css" href="css/index.css" />
+	</head>
+
+	<body>
+		<!--首页导航-->
+		<header>
+			<nav class="top">
+				<img src="img/logoindex.png" />
+				<ul class="top_ul">
+					<li>
+						<a href="#">首页</a>
+					</li>
+					<li>
+						<a href="#">产品中心</a>
+					</li>
+					<li>
+						<a href="#">解决方案</a>
+					</li>
+					<li>
+						<a href="#">合作伙伴</a>
+					</li>
+					<li>
+						<a href="#">技术支持</a>
+					</li>
+					<li>
+						<a href="#">新闻动态</a>
+					</li>
+					<li>
+						<a href="#">关于我们</a>
+					</li>
+				</ul>
+			</nav>
+		</header>
+		<!--导航结束-->
+		<div class="clr"></div>
+		<!--轮播图-->
+		<div class="body">
+			<div class="body_hd">
+				<ul id="ol">
+					<li class="on"></li>
+					<li></li>
+					<li></li>
+					<li></li>
+				</ul>
+			</div>
+			<div class="body_img">
+				<ul id="ul">
+					<li style="display: block;"><img src="img/banner1.png" id="lb" /></li>
+					<li style="display: none; "><img src="img/banner2.png" /></li>
+					<li style="display: none;"><img src="img/banner3.png" /></li>
+					<li style="display: none;"><img src="img/banner4.png" /></li>
+				</ul>
+			</div>
+					<a href="#" class="img_left"></a>
+					<a href="#" class="img_right"></a>
+		</div>
+		<script>
+			var index = 0;
+
+			function fun() {
+				var ulLi = document.getElementById("ul").getElementsByTagName("li");
+				var olLi = document.getElementById("ol").getElementsByTagName("li");
+				ulLi[index].setAttribute("style", "display: none;");
+				olLi[index].setAttribute("class", "");
+				index++;
+				if(index == 4) {
+					index = 0;
+				}
+				ulLi[index].setAttribute("style", "display: block;");
+				olLi[index].setAttribute("class", "on");
+			}
+			var timer = setInterval(fun, 2000);
+			var ul = document.getElementById("ul");
+			ul.onmouseover = function() {
+				clearInterval(timer);
+			}
+			ul.onmouseout = function() {
+				timer = setInterval(fun, 2000);
+			}
+		</script>
+		<!--轮播图结束-->
+		<div class="clr"></div>
+		<!--产品开始-->
+		<div class="product">
+			<div class="Our_products">
+				<h2>我们的产品</h2>
+				<h3>Our products</h3>
+			</div>
+			<div class="content_of_product">
+				<ul>
+					<li>
+						<div class="product_logo">
+							<img src="img/clgl.png" />
+						</div>
+							<a href="#">车辆管理系统</a>
+						<div class="down"  >	
+							<a href="#"><img src="img/dian.png" /></a>
+						</div>
+					</li>
+					<li>
+						<div class="product_logo">
+							<img src="img/fcxt.png" />
+						</div>
+							<a href="#">场馆预定管理系统</a>
+						<div class="down"  >	
+							<a href="#"><img src="img/dian.png" /></a>
+						</div>
+					</li>
+					<li>
+						<div class="product_logo">
+							<img src="img/fwjd.png" />
+						</div>
+							<a href="#">服务监督管理系统</a>
+						<div class="down"  >	
+							<a href="#"><img src="img/dian.png" /></a>
+						</div>
+					</li>
+					<li>
+						<div class="product_logo">
+							<img src="img/gygl.png" />
+						</div>
+							<a href="#">公寓管理系统</a>
+						<div class="down"  >	
+							<a href="#"><img src="img/dian.png" /></a>
+						</div>
+					</li>
+					<li>
+						<div class="product_logo">
+							<img src="img/lxgl.png" />
+						</div>
+							<a href="#">离校管理系统</a>
+						<div class="down"  >	
+							<a href="#"><img src="img/dian.png" /></a>
+						</div>
+					</li>
+					<li>
+						<div class="product_logo">
+							<img src="img/nhgl.png" />
+						</div>
+							<a href="#">能耗管理系统</a>
+						<div class="down"  >	
+							<a href="#"><img src="img/dian.png" /></a>
+						</div>
+					</li>
+					<li class="list">
+						<div class="product_logo">
+							<img src="img/rlsb.png" />
+						</div>
+							<a href="#">人脸识别闸机通道</a>
+						<div class="down"  >	
+							<a href="#"><img src="img/dian.png" /></a>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<!--内容结束-->
+		<div class="clr"></div>
+		<!--服务平台开始-->
+		<div class="serve">
+			<div class="serve_content">
+				<div class="Our_serve">
+					<h2>云后勤一站式服务平台</h2>
+					<h3>Cloud logistics one-stop service platform</h3>
+				</div>
+				<div class="serve_logo">
+					<ul>
+						<li>
+							<div class="server_img">
+								<img src="img/bcglpt.png"/>
+							</div>
+							<div class="server_text">班车管理</div>
+						</li>
+						<li>
+							<div class="server_img">
+								<img src="img/bcglpt.png"/>
+							</div>
+							<div class="server_text">班车管理</div>
+						</li>
+						<li>
+							<div class="server_img">
+								<img src="img/bcglpt.png"/>
+							</div>
+							<div class="server_text">班车管理</div>
+						</li>
+						<li>
+							<div class="server_img">
+								<img src="img/bcglpt.png"/>
+							</div>
+							<div class="server_text">班车管理</div>
+						</li>
+						<li>
+							<div class="server_img">
+								<img src="img/bcglpt.png"/>
+							</div>
+							<div class="server_text">班车管理</div>
+						</li>
+						<li>
+							<div class="server_img">
+								<img src="img/bcglpt.png"/>
+							</div>
+							<div class="server_text">班车管理</div>
+						</li>
+						<li>
+							<div class="server_img">
+								<img src="img/bcglpt.png"/>
+							</div>
+							<div class="server_text">班车管理</div>
+						</li>
+						<li>
+							<div class="server_img">
+								<img src="img/bcglpt.png"/>
+							</div>
+							<div class="server_text">班车管理</div>
+						</li>
+						<li>
+							<div class="server_img">
+								<img src="img/bcglpt.png"/>
+							</div>
+							<div class="server_text">班车管理</div>
+						</li>
+						<li>
+							<div class="server_img">
+								<img src="img/bcglpt.png"/>
+							</div>
+							<div class="server_text">班车管理</div>
+						</li>
+					</ul>
+				</div>
+				<div class="server_more">
+					<span>More</span>
+				</div>
+			</div>
+		</div>
+		<!--服务平台结束-->
+		<div class="clr"></div>
+		<!--应用展示开始-->
+		<div class="Application">
+			<div class="Our_Application">
+				<h2>应用展示</h2>
+				<h3>Application Show</h3>
+			</div>
+			<div class="Application_img">
+				<ul>
+					<li class="pic1"><a href="#"><img src="img/1-1.png"/></a></li>
+					<li class="pic2"><a href="#"><img src="img/1-2.png"/></a></li>
+					<li class="pic3"><a href="#"><img src="img/1-3.png"/></a></li>
+					<li class="pic4"><a href="#"><img src="img/1-4.png"/></a></li>
+					<li class="pic5"><a href="#"><img src="img/1-5.png"/></a></li>
+				</ul>
+				<span class="Application_left"><img src="img/arrow1.png"/></span>
+				<span class="Application_right"><img src="img/arrow2.png"/></span>
+			</div>
+		</div>
+		<!--应用展示结束-->
+		<div class="clr"></div>
+		<!--新闻资讯开始-->
+		<div class="News">
+			<div class="Our_News">
+				<h2>新闻资讯</h2>
+				<h3>New and information</h3>
+			</div>
+			<div class="New_title">
+				<span id="New_title_left">公司新闻</span>
+				<span id="New_title_right">行业新闻</span>
+			</div>
+			<div class="News_content">
+				<div class="News_content_listbody">
+					<div>
+						<img src="img/1.jpg" />
+					</div>
+					<dl>
+						<dt>热烈祝贺博雅讯科技荣获2018年河南省高成长软件企业和省优秀软件产品荣誉称号！</dt>
+						<dd>2019年1月30日，由河南省软件服务业协会公示2018评优结果，郑州博雅讯科技有限公司榜上有名，荣获“2018年河南省高成长软件企业”称号，博雅讯高校学生公寓管理系统软件V2.0被评为河南省优秀软件产品。</dd>
+					</dl>
+				</div>
+				<div class="News_content_listbody" id="News_conter">
+					<div>
+						<img src="img/1.jpg" />
+					</div>
+					<dl>
+						<dt>热烈祝贺博雅讯科技荣获2018年河南省高成长软件企业和省优秀软件产品荣誉称号！</dt>
+						<dd>2019年1月30日，由河南省软件服务业协会公示2018评优结果，郑州博雅讯科技有限公司榜上有名，荣获“2018年河南省高成长软件企业”称号，博雅讯高校学生公寓管理系统软件V2.0被评为河南省优秀软件产品。</dd>
+					</dl>
+				</div>
+				<div class="News_content_listbody">
+					<div>
+						<img src="img/1.jpg" />
+					</div>
+					<dl>
+						<dt>热烈祝贺博雅讯科技荣获2018年河南省高成长软件企业和省优秀软件产品荣誉称号！</dt>
+						<dd>2019年1月30日，由河南省软件服务业协会公示2018评优结果，郑州博雅讯科技有限公司榜上有名，荣获“2018年河南省高成长软件企业”称号，博雅讯高校学生公寓管理系统软件V2.0被评为河南省优秀软件产品。</dd>
+					</dl>
+				</div>
+			</div>
+			<div class="News_more">
+					<span>More</span>
+			</div>
+		</div>
+		<!--新闻资讯结束-->
+		<!--正在服务开始-->
+		<div class="serveing">
+			<div class="Our_serveing">
+				<h2>我们正在为他们服务</h2>
+				<h3>We are serving them.</h3>
+			</div>
+			<div style="margin: 0 auto;">
+				<img src="img/ali.png"/>
+			</div>
+		</div>
+		<!--正在服务结束-->
+		<!--底部开始-->
+		<footer>
+			<div class="footer_top">
+				<div class="footer_nav">
+					<ul>
+						<li style="padding-left: 0;"><a href="#">产品中心</a></li>
+						<li><a href="#">解决方案</a></li>
+						<li><a href="#">技术支持</a></li>
+						<li><a href="#">新闻动态</a></li>
+						<li><a href="#">关于我们</a></li>
+					</ul>
+				</div>
+				<div class="footer_top_left">
+					<div class="footer_top_left_img">
+						<img src="img/byxwei.jpg" />
+					</div>
+					<dl>
+						<dt>联系我们</dt>
+						<dd>地址：郑州市大学科技园（东区）18号楼A座12层</dd>
+						<dd>电话：0371-53308619</dd>
+						<dd>邮箱：boyaxun@360boom.com</dd>
+					</dl>
+				</div>
+				<div class="footer_top_right">
+					<h4>销售服务电话：</h4>
+					<h2>0371-53308619</h2>
+					<h3>郑州博雅讯科技有限公司</h3>
+				</div>
+			</div>
+			<div class="footer_bottom">
+					<div class=" paltcontainer">
+		    			<div class="companybox_t" style="text-align:center; height:50px;line-height: 50px; font-size:12px;color:#a7a7a7;"><a href="#" style="color:#a7a7a7; text-decoration: none;">国家信息产业部ICP备案豫ICP备13022845号-2</a> Copyright(c) 2009-2016 郑州博雅讯科技有限公司版权所有
+          				</div>
+	      		</div>
+			</div>
+		</footer>
+		<!--底部结束-->
+	</body>
+
+</html>

@@ -1,0 +1,26 @@
+
+.container{
+	width:62.5%;
+	/* min-width:50%; */
+/* 	height:auto; */
+	margin:0px auto;
+	background:#FFFFFF;
+}
+.content{
+	margin: 0 20px;
+}
+
+img {
+    vertical-align: middle;
+    border: none;
+}
+input ,textarea,button {
+	outline: none;
+	border: none;
+}
+li{
+	list-style: none;
+}
+a{
+	color:#333;
+}
